@@ -1,6 +1,8 @@
 package Weapons;
 
-public enum  Weapons {
+import Interface.IWeapon;
+
+public enum Weapon  {
 
     SWORD(25),
     AXE(45),
@@ -9,11 +11,17 @@ public enum  Weapons {
 
     private final int value;
 
-    Weapons(int value){
+    Weapon(int value){
         this.value = value;
     }
+
+
 
     public int getValue() {
         return value;
     }
+
+
+
+
 }

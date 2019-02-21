@@ -1,4 +1,5 @@
 import Player.Knight;
+import Weapons.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,11 +9,13 @@ public class KnightTest {
 
     Knight knight;
 
+
     @Before
-    public void before(){knight  = new Knight ("Raul",65);
+    public void before(){knight  = new Knight ("Raul",65, Weapon.AXE);
     }
 
     @Test
+
     public void canGetName(){
         assertEquals("Raul", knight.getName());
     }
@@ -21,4 +24,6 @@ public class KnightTest {
     public void canGetHealthPoint(){
         assertEquals(65, knight.getHealthPoint());
     }
+
+    
 }

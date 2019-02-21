@@ -1,13 +1,13 @@
 package Weapons;
 
-public enum  Creature {
+public enum Defend {
 
     OGRE(90),
     DRAGON(150);
 
     private final int value;
 
-    Creature(int value){
+    Defend(int value){
         this.value = value;
     }
 

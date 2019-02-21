@@ -1,7 +1,12 @@
 package Player;
 
-public class Knight  extends Fighter{
-    public Knight(String name, int healthPoint) {
-        super(name, healthPoint);
+import Interface.IWeapon;
+import Weapons.Weapon;
+
+public class Knight  extends Fighter implements IWeapon {
+    public Knight(String name, int healthPoint, Weapon weapon) {
+        super(name, healthPoint, weapon);
     }
+
+
 }
