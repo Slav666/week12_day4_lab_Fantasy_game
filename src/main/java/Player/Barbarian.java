@@ -1,7 +1,10 @@
 package Player;
 
-public class Barbarian extends Fighter {
-    public Barbarian(String name, int healthPoint) {
-        super(name, healthPoint);
+import Interface.IWeapon;
+import Weapons.Weapon;
+
+public class Barbarian extends Fighter implements IWeapon {
+    public Barbarian(String name, int healthPoint, Weapon weapon) {
+        super(name, healthPoint, weapon);
     }
 }

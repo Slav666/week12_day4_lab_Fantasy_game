@@ -17,11 +17,18 @@ public abstract class Fighter extends Player implements IWeapon {
         return weapon;
     }
 
+//    public Weapon canChangeWeapon(){
+//
+//
+//    }
+
 
     public int makeAttack(){
         return this.weapon.getValue();
 
     }
+
+
 
 
 

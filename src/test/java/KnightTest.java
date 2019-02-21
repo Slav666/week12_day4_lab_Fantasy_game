@@ -25,5 +25,13 @@ public class KnightTest {
         assertEquals(65, knight.getHealthPoint());
     }
 
-    
+    @Test
+    public void canGetWeapon(){
+        assertEquals(Weapon.AXE, knight.getWeapon());
+    }
+//    @Test
+//    public void cnaMakeAttack(){
+//
+//        assertEquals(45,knight.makeAttack());
+//    }
 }
