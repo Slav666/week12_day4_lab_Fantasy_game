@@ -7,9 +7,10 @@ public abstract class Enemy {
 
 
 
-    public Enemy(int healthPoint){
+
+    public Enemy(int healthPoint, int damageValue){
         this.healthPoint = healthPoint;
-        this.damageValue = -5;
+        this.damageValue = damageValue;
 
     }
 
@@ -17,8 +18,15 @@ public abstract class Enemy {
         return healthPoint;
     }
 
-    public int takeDamage(){
-        return healthPoint + damageValue;
+//    public void setDamageValue(int damageValue) {
+//        this.damageValue = damageValue;
+//    }
 
+
+//    public void isAttacked(int damage){
+//        this.healthPoint -= damage;
+//    }
+    public int getDamageValue() {
+    return damageValue;
     }
 }

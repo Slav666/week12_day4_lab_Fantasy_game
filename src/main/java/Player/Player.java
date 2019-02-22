@@ -18,4 +18,6 @@ public abstract class Player {
     public int getHealthPoint() {
         return healthPoint;
     }
+
+
 }

@@ -4,25 +4,28 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
- class OrcTest {
+public class OrcTest {
 
     Orc orc;
 
 
-     @Before
-    public void before(){ orc = new Orc(100);
+    @Before
+    public void before() {
+        orc = new Orc(100, 10);
 
-     }
+    }
 
-     @Test
-    public void canGetHealthPoint(){
-         assertEquals(100, orc.getHealthPoint());
-     }
+    @Test
+    public void canGetHealthPoint() {
+        assertEquals(100, orc.getHealthPoint());
+    }
 
-     @Test void canTakeDamage(){
+    @Test
+    public void canAttackWithDamageValue() {
+        assertEquals(10, orc.getDamageValue());
 
-         assertEquals(95, orc.takeDamage());
-     }
+    }
 
 
 }
+

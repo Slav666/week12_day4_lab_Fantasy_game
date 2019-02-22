@@ -12,13 +12,13 @@ public class Cleric extends Player implements IHeal {
         this.heal = heal;
     }
 
-    public Heals getWeapon(){
+    public Heals getHeals(){
         return heal;
     }
 
 
     public int makeHeal(){
-        return this.getValue();
+        return this.heal.getValue();
 
     }
 }

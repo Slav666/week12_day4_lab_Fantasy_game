@@ -11,7 +11,7 @@ public class TrollTest {
     Troll troll;
 
     @Before
-    public void before(){troll = new Troll(100);
+    public void before(){troll = new Troll(100, 5);
 
     }
 
@@ -21,9 +21,9 @@ public class TrollTest {
     }
 
     @Test
-    public void canTakeDamage(){
-
-        assertEquals(95, troll.takeDamage());
+    public void canAttackWithDamageValue() {
+        assertEquals(10, troll.getDamageValue());
 
     }
+
 }

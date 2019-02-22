@@ -3,6 +3,8 @@ import Weapons.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 
+import static Weapons.Weapon.AXE;
+import static Weapons.Weapon.SWORD;
 import static org.junit.Assert.assertEquals;
 
 public class KnightTest {
@@ -29,9 +31,29 @@ public class KnightTest {
     public void canGetWeapon(){
         assertEquals(Weapon.AXE, knight.getWeapon());
     }
-//    @Test
-//    public void cnaMakeAttack(){
-//
-//        assertEquals(45,knight.makeAttack());
-//    }
+
+    @Test
+    public void canShowTheDamageValueClub(){
+        assertEquals(45, knight.makeAttack());
+    }
+
+    @Test
+    public void canChangeWeaponToSWORD(){
+        knight.setWeapon(SWORD);
+        assertEquals(Weapon.SWORD, knight.getWeapon());
+    }
+    @Test
+    public void FighterCanBeAttacked(){
+        knight.isAttacked(20);
+        assertEquals(45, knight.getHealthPoint());
+    }
+
+    @Test
+    public void FighterCanBeHealed(){
+        knight.isAttacked(20);
+        assertEquals(45, knight.getHealthPoint());
+        knight.isHealed(10);
+        assertEquals(55, knight.getHealthPoint());
+
+    }
 }
